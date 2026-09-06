@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Course Home Page</title>
+    <meta name="description" content="Course home page for WDD 231 Web Frontend Development II">
+    <meta name="author" content="Adafa Ralph">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <span class="logo">Adafa Ralph</span>
+        <button id="menu" aria-label="Toggle Navigation Menu"></button>
+        <nav>
+            <ul id="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Certificate</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Web Frontend Development II</h1>
+            <p>Welcome to my WDD 231 course home page. This site serves as a hub for assignments and projects throughout the term.</p>
+        </section>
+
+        <section class="card about-me">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/profile.jpg" alt="Profile Picture" loading="lazy" width="150" height="150">
+                <p>Hello! I am a software developer based in Saint Vincent and the Grenadines, currently pursuing a Bachelor of Science in Software Development. I enjoy building robust applications and exploring low-level systems.</p>
+            </div>
+        </section>
+
+        <section class="card course-work">
+            <h2>Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button id="all-courses" class="filter-btn active">All</button>
+                <button id="wdd-courses" class="filter-btn">WDD</button>
+                <button id="cse-courses" class="filter-btn">CSE</button>
+            </div>
+
+            <div id="course-container" class="course-grid">
+                <!-- Dynamically populated via JavaScript -->
+            </div>
+
+            <div class="credit-summary">
+                <p>Total Credits: <span id="total-credits">0</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Adafa Ralph | Saint Vincent and the Grenadines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
