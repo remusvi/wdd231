@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+    .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block !important;
+        background-color: transparent;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav a {
+        border-top: none;
+        padding: 1rem 1.5rem;
+    }
+
+    .grid-view {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}

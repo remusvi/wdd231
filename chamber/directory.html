@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Course Home Page</title>
+    <meta name="description" content="Course home page for WDD 231 Web Frontend Development II">
+    <meta name="author" content="Adafa Ralph">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-box">
+                <img src="images/chamber-logo.webp" alt="Chamber Logo" width="50" height="50">
+                <span class="chamber-title">SVG Chamber of Commerce</span>
+            </div>
+            <button id="menu-button" aria-label="Toggle Navigation Menu">&#9776;</button>
+        </div>
+        <nav id="navigation-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Member Directory</h1>
+
+        <div class="view-toggle">
+            <button id="grid-view" class="active" title="Grid View">Grid</button>
+            <button id="list-view" title="List View">List</button>
+        </div>
+
+        <section id="members-container" class="grid-view">
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>St. Vincent & the Grenadines Chamber of Commerce</strong></p>
+            <p>Email: info@svgchamber.example.com | Phone: +1 784-555-0100</p>
+            <p>&copy; <span id="current-year"></span> Adafa Ralph | WDD 231 | Last Modification: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

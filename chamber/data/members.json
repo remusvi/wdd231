@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Vincy Aqua Adventures",
+    "address": "Villa Beach, St. Vincent and the Grenadines",
+    "phone": "+1 784-555-0112",
+    "website": "https://vincyaqua.example.com",
+    "image": "aqua-adventures.webp",
+    "membership": 3,
+    "description": "Premier scuba diving, snorkeling excursions, and marine eco-tours."
+  },
+  {
+    "name": "Grenadine Breeze Hotel",
+    "address": "Admiralty Bay, Bequia, St. Vincent and the Grenadines",
+    "phone": "+1 784-555-0148",
+    "website": "https://grenadinebreeze.example.com",
+    "image": "hotel-breeze.webp",
+    "membership": 3,
+    "description": "Luxury boutique hotel offering panoramic ocean views and world-class hospitality."
+  },
+  {
+    "name": "Kingstown Artisan Bakery",
+    "address": "Bay Street, Kingstown, St. Vincent and the Grenadines",
+    "phone": "+1 784-555-0193",
+    "website": "https://artisandirect.example.com",
+    "image": "bakery.webp",
+    "membership": 1,
+    "description": "Freshly baked pastries, artisanal breads, and locally sourced coffee."
+  },
+  {
+    "name": "SVG Solar Innovations",
+    "address": "Rivulet Industrial Estate, St. Vincent and the Grenadines",
+    "phone": "+1 784-555-0176",
+    "website": "https://svgsolar.example.com",
+    "image": "solar.webp",
+    "membership": 2,
+    "description": "Sustainable renewable energy engineering and solar panel installations."
+  },
+  {
+    "name": "Caribbean Craft & Souvenirs",
+    "address": "Heritage Square, Kingstown, St. Vincent and the Grenadines",
+    "phone": "+1 784-555-0125",
+    "website": "https://caribcraft.example.com",
+    "image": "crafts.webp",
+    "membership": 1,
+    "description": "Handmade local crafts, paintings, and authentic Caribbean souvenirs."
+  },
+  {
+    "name": "Windward Logistics & Freight",
+    "address": "Deep Water Harbour, Kingstown, St. Vincent and the Grenadines",
+    "phone": "+1 784-555-0164",
+    "website": "https://windwardlogistics.example.com",
+    "image": "logistics.webp",
+    "membership": 2,
+    "description": "Inter-island shipping, customs clearance, and commercial freight management."
+  },
+  {
+    "name": "Canouan Yacht Services",
+    "address": "Charlestown Bay, Canouan, St. Vincent and the Grenadines",
+    "phone": "+1 784-555-0182",
+    "website": "https://canouanyachts.example.com",
+    "image": "yachts.webp",
+    "membership": 3,
+    "description": "Full-service yacht maintenance, provisioning, and concierge docking support."
+  }
+]
