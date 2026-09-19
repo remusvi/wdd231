@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Vincent and the Grenadines Chamber of Commerce - Home</title>
+    <meta name="description" content="Welcome to the Saint Vincent and the Grenadines Chamber of Commerce home page. Connecting businesses, fostering community growth, and supporting local enterprise.">
+    <meta name="author" content="Adafa Ralph">
+
+
+    <meta property="og:title" content="SVG Chamber of Commerce Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://adafa-ralph.github.io/wdd231/chamber/images/hero.jpg">
+    <meta property="og:url" content="https://adafa-ralph.github.io/wdd231/chamber/index.html">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="SVG Chamber Logo" class="logo">
+            <div class="title-wrapper">
+                <span class="chamber-title">Saint Vincent & the Grenadines</span>
+                <span class="chamber-subtitle">Chamber of Commerce</span>
+            </div>
+            <button id="menu" aria-label="Toggle Navigation Menu"></button>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Scenic view of Saint Vincent and the Grenadines" class="hero-image">
+            <div class="hero-cta-box">
+                <h2>Building a Thriving Business Community Together</h2>
+                <p>Join our network of professionals and elevate your business reach across the islands.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <div class="home-grid">
+            <section class="card events-card">
+                <h3>Current Events</h3>
+                <ul>
+                    <li><strong>Annual Business Expo 2026:</strong> October 15th at Kingstown Convention Center.</li>
+                    <li><strong>Small Business Networking Breakfast:</strong> This Thursday at 8:00 AM.</li>
+                    <li><strong>Tourism & Trade Workshop:</strong> Next Tuesday online via Zoom.</li>
+                </ul>
+            </section>
+            <section class="card weather-card">
+                <h3>Weather</h3>
+                <div class="current-weather">
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <div>
+                        <p><span id="current-temp">--</span>&deg;C</p>
+                        <p id="weather-desc">Loading weather...</p>
+                    </div>
+                </div>
+                <hr>
+                <h4>3-Day Forecast</h4>
+                <ul id="forecast-list">
+                    <li>Loading forecast...</li>
+                </ul>
+            </section>
+
+            <section class="card spotlights-container" id="spotlights">
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Saint Vincent and the Grenadines Chamber of Commerce</p>
+        <p>Adafa Ralph | WDD 231 Project</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
