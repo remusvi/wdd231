@@ -5,16 +5,16 @@
     }
 
     #menu-button, #menu {
-        display: none !important;
+        display: none;
     }
 
     nav {
-        display: block !important;
-        background-color: var(--secondary-color, #082847);
+        display: block;
+        background-color: #082847;
     }
 
     nav ul, nav .navigation {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
         justify-content: flex-end;
         max-width: 1200px;
@@ -25,6 +25,13 @@
     nav a {
         border-top: none;
         padding: 1rem 1.5rem;
+        color: #ffffff;
+    }
+
+    nav a:hover, nav a.active {
+        background-color: var(--accent-color);
+        color: #082847;
+        font-weight: bold;
     }
 
     /* Hero Section Desktop Overlay */
