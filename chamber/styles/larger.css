@@ -78,3 +78,13 @@
         gap: 1.5rem;
     }
 }
+
+@media (min-width: 768px) {
+    /* Side-by-side grid layout for Form and Cards */
+    .join-container {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 2rem;
+        align-items: start;
+    }
+}
