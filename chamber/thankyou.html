@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Submitted - SVG Chamber of Commerce</title>
+    <meta name="description" content="Thank you for submitting your membership application to the SVG Chamber of Commerce.">
+    <meta name="author" content="Adafa Ralph">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="SVG Chamber Logo" class="logo">
+            <div class="title-wrapper">
+                <span class="chamber-title">Saint Vincent &amp; the Grenadines</span>
+                <span class="chamber-subtitle">Chamber of Commerce</span>
+            </div>
+            <button id="menu-button" aria-label="Toggle Navigation Menu">&#9776;</button>
+        </div>
+        <nav id="nav-menu">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thankyou-main">
+        <h1>Thank You for Applying!</h1>
+        <p>We have received your membership application. Below is a summary of your submitted details:</p>
+
+        <section class="summary-card">
+            <h2>Application Details</h2>
+            <div id="results"></div>
+        </section>
+
+        <a href="index.html" class="cta-button">Return to Home</a>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Saint Vincent and the Grenadines Chamber of Commerce</p>
+        <p>Adafa Ralph | WDD 231 Project</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

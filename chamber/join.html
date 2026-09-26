@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Vincent and the Grenadines Chamber of Commerce - Join</title>
+    <meta name="description" content="Apply to join the Saint Vincent and the Grenadines Chamber of Commerce. Select a membership level and grow your business today.">
+    <meta name="author" content="Adafa Ralph">
+    <meta property="og:title" content="Join the SVG Chamber of Commerce">
+    <meta property="og:description" content="Apply for chamber membership, view benefits, and connect with business leaders across Saint Vincent and the Grenadines.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://remusvi.github.io/wdd231/chamber/images/hero.jpg">
+    <meta property="og:url" content="https://remusvi.github.io/wdd231/chamber/join.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="SVG Chamber Logo" class="logo">
+            <div class="title-wrapper">
+                <span class="chamber-title">Saint Vincent &amp; the Grenadines</span>
+                <span class="chamber-subtitle">Chamber of Commerce</span>
+            </div>
+            <button id="menu-button" aria-label="Toggle Navigation Menu">&#9776;</button>
+        </div>
+        <nav id="nav-menu">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <h1>Membership Application</h1>
+
+        <div class="join-container">
+            <!-- Application Form -->
+            <form method="get" action="thankyou.html" class="join-form">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+
+                    <label for="fname">
+                        First Name*
+                        <input type="text" id="fname" name="fname" required autocomplete="given-name" title="Enter your first name">
+                    </label>
+
+                    <label for="lname">
+                        Last Name*
+                        <input type="text" id="lname" name="lname" required autocomplete="family-name" title="Enter your last name">
+                    </label>
+
+                    <label for="org-title">
+                        Organizational Title
+                        <input type="text" id="org-title" name="org-title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" title="Must contain only letters, spaces, or hyphens (minimum 7 characters)">
+                    </label>
+
+                    <label for="email">
+                        Email Address*
+                        <input type="email" id="email" name="email" required autocomplete="email" placeholder="john.doe@example.com" title="Enter a valid email address">
+                    </label>
+
+                    <label for="phone">
+                        Mobile Phone*
+                        <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your mobile phone number">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Information</legend>
+
+                    <label for="organization">
+                        Business / Organization Name*
+                        <input type="text" id="organization" name="organization" required autocomplete="organization" title="Enter your business or organization name">
+                    </label>
+
+                    <label for="description">
+                        Business Description
+                        <textarea id="description" name="description" rows="4" title="Describe your business or organization"></textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership Level*</legend>
+                    <label class="radio-label">
+                        <input type="radio" name="membership" value="np" required> NP Membership (Non-Profit - Free)
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="membership" value="bronze"> Bronze Membership
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="membership" value="silver"> Silver Membership
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="membership" value="gold"> Gold Membership
+                    </label>
+                </fieldset>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Submit Application" class="submit-btn">
+            </form>
+
+            <!-- Membership Level Animated Cards -->
+            <section class="membership-cards">
+                <h2>Membership Tiers</h2>
+
+                <div class="level-card np-card">
+                    <h3>NP Membership</h3>
+                    <p>Designed for non-profit organizations with no registration fee.</p>
+                    <button type="button" class="info-btn" data-modal="modal-np">Learn More</button>
+                </div>
+
+                <div class="level-card bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Essential benefits for small businesses entering the market.</p>
+                    <button type="button" class="info-btn" data-modal="modal-bronze">Learn More</button>
+                </div>
+
+                <div class="level-card silver-card">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced visibility, event discounts, and networking channels.</p>
+                    <button type="button" class="info-btn" data-modal="modal-silver">Learn More</button>
+                </div>
+
+                <div class="level-card gold-card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium placement, full sponsorship access, and homepage spotlights.</p>
+                    <button type="button" class="info-btn" data-modal="modal-gold">Learn More</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- HTML Modals for Benefits -->
+        <dialog id="modal-np" class="benefit-modal">
+            <div class="modal-content">
+                <h3>NP Membership Benefits</h3>
+                <ul>
+                    <li>No annual membership fee</li>
+                    <li>Listing in online business directory</li>
+                    <li>Access to chamber networking events</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-bronze" class="benefit-modal">
+            <div class="modal-content">
+                <h3>Bronze Membership Benefits</h3>
+                <ul>
+                    <li>Standard directory listing with logo</li>
+                    <li>Discounted event tickets</li>
+                    <li>Quarterly newsletter feature</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-silver" class="benefit-modal">
+            <div class="modal-content">
+                <h3>Silver Membership Benefits</h3>
+                <ul>
+                    <li>Priority directory listing</li>
+                    <li>Free admission to monthly networking breakfasts</li>
+                    <li>10% discount on chamber sponsorship packages</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </dialog>
+
+        <dialog id="modal-gold" class="benefit-modal">
+            <div class="modal-content">
+                <h3>Gold Membership Benefits</h3>
+                <ul>
+                    <li>Top-tier directory positioning</li>
+                    <li>Homepage spotlight rotation eligibility</li>
+                    <li>Free booth space at Annual Business Expo</li>
+                    <li>VIP seating at chamber banquets</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Saint Vincent and the Grenadines Chamber of Commerce</p>
+        <p>Adafa Ralph | WDD 231 Project</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
