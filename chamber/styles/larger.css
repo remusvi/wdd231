@@ -4,20 +4,22 @@
         margin: 0 auto;
     }
 
-    #menu-button {
-        display: none;
+    #menu-button, #menu {
+        display: none !important;
     }
 
     nav {
         display: block !important;
-        background-color: transparent;
+        background-color: var(--secondary-color, #082847);
     }
 
-    nav ul {
-        display: flex;
+    nav ul, nav .navigation {
+        display: flex !important;
+        flex-direction: row;
         justify-content: flex-end;
         max-width: 1200px;
         margin: 0 auto;
+        list-style: none;
     }
 
     nav a {
@@ -25,7 +27,47 @@
         padding: 1rem 1.5rem;
     }
 
-    .grid-view {
+    /* Hero Section Desktop Overlay */
+    .hero {
+        position: relative;
+    }
+
+    .hero-cta-box {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        max-width: 380px;
+        margin-top: 0;
+        text-align: left;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .events-card {
+        grid-column: span 2;
+    }
+
+    .weather-card {
+        grid-column: span 1;
+    }
+
+    .spotlights-container {
+        grid-column: span 3;
+        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.25rem;
+    }
+
+    /* Directory Member Grid View */
+    .grid-view {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
     }
 }
