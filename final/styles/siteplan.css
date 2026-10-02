@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #f0f0f0;
+    line-height: 1.4;
+}
+
+header {
+    background-color: #1b263b;
+    color: #ffffff;
+    padding: 15px 20px;
+    border-bottom: 3px solid #0d1b2a;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+}
+
+/* Navigation */
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #e0e1dd;
+    text-decoration: underline;
+}
+
+/* Clearfix for Header Floats */
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#menu {
+    display: none;
+    background-color: #415a77;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "≡ Menu";
+}
+
+#menu.open::before {
+    content: "✕ Close";
+}
+
+/* Main Container */
+main {
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.hero h1 {
+    font-size: 24px;
+    color: #1b263b;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #b0b0b0;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 18px;
+    color: #1b263b;
+    background-color: #e0e1dd;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-left: 4px solid #415a77;
+}
+
+/* About Section Layout */
+.about-content img {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #999999;
+    padding: 3px;
+    background-color: #ffffff;
+}
+
+.about-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Course Filters & Grid */
+.filter-buttons {
+    margin-bottom: 15px;
+}
+
+.filter-btn {
+    padding: 6px 12px;
+    border: 1px solid #415a77;
+    background-color: #e0e1dd;
+    color: #1b263b;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #415a77;
+    color: #ffffff;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.course-card {
+    background-color: #f9f9f9;
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: center;
+}
+
+.course-card.completed {
+    background-color: #d8f3dc;
+    border: 1px solid #52b788;
+}
+
+.course-card h3 {
+    font-size: 15px;
+    color: #1b263b;
+    margin-bottom: 5px;
+}
+
+.course-card p {
+    font-size: 13px;
+    color: #444444;
+}
+
+.credit-summary {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: right;
+    padding: 8px;
+    background-color: #e0e1dd;
+    border: 1px solid #cccccc;
+}
+
+/* Footer */
+footer {
+    background-color: #1b263b;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    border-top: 3px solid #0d1b2a;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 3px 0;
+}
+
+/* Mobile Media Query */
+@media screen and (max-width: 768px) {
+    header {
+        position: relative;
+    }
+
+    .logo {
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    #menu {
+        display: block;
+        float: right;
+    }
+
+    nav {
+        display: none;
+        float: none;
+        clear: both;
+        width: 100%;
+        background-color: #1b263b;
+        padding-top: 10px;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+        padding: 8px 0;
+        border-top: 1px solid #415a77;
+        text-align: center;
+    }
+
+    .about-content img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+    }
+}
