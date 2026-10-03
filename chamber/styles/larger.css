@@ -80,11 +80,44 @@
 }
 
 @media (min-width: 768px) {
-    /* Side-by-side grid layout for Form and Cards */
     .join-container {
         display: grid;
         grid-template-columns: 3fr 2fr;
         gap: 2rem;
         align-items: start;
     }
+}
+
+
+
+@media screen and (min-width: 641px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+  }
+
+
+  .discover-card figure img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .discover-card figure img:hover {
+    transform: scale(1.04);
+    filter: brightness(1.1);
+  }
+}
+
+
+@media screen and (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card5"
+      "card6 card7 card8";
+  }
 }

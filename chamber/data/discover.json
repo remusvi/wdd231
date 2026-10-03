@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Botanical Gardens",
+    "address": "Montrose, Kingstown, St. Vincent",
+    "description": "The oldest botanical gardens in the Western Hemisphere, featuring rare tropical plants and the St. Vincent Parrot.",
+    "image": "images/botanical-gardens.webp"
+  },
+  {
+    "name": "Fort Charlotte",
+    "address": "Edinboro, Kingstown, St. Vincent",
+    "description": "A historic 19th-century military fort offering panoramic views of Kingstown and the surrounding Caribbean Sea.",
+    "image": "images/fort-charlotte.webp"
+  },
+  {
+    "name": "La Soufrière Volcano",
+    "address": "North Windward / Leeward, St. Vincent",
+    "description": "An active volcano featuring hiking trails through lush rainforests up to a breathtaking summit crater view.",
+    "image": "images/la-soufriere.webp"
+  },
+  {
+    "name": "Dark View Falls",
+    "address": "Richmond, Leeward, St. Vincent",
+    "description": "Two beautiful cascading waterfalls nestled in rainforest scenery, accessible via a picturesque bamboo bridge.",
+    "image": "images/dark-view-falls.webp"
+  },
+  {
+    "name": "Wallilabou Bay",
+    "address": "Barrouallie, St. Vincent",
+    "description": "A scenic natural cove renowned as a primary filming site for Disney's Pirates of the Caribbean franchise.",
+    "image": "images/wallilabou-bay.webp"
+  },
+  {
+    "name": "Bequia Island",
+    "address": "Northern Grenadines, St. Vincent",
+    "description": "A charming island known for boat building, vibrant harbor towns, and crystal-clear swimming beaches.",
+    "image": "images/bequia-island.webp"
+  },
+  {
+    "name": "Tobago Cays",
+    "address": "Southern Grenadines, St. Vincent",
+    "description": "An archipelago of uninhabited cays surrounded by turquoise lagoons, rich coral reefs, and green sea turtles.",
+    "image": "images/tobago-cays.webp"
+  },
+  {
+    "name": "Kingstown Market",
+    "address": "Market Square, Kingstown, St. Vincent",
+    "description": "A bustling outdoor marketplace filled with fresh local fruits, vegetables, ground provisions, and artisanal goods.",
+    "image": "images/kingstown-market.webp"
+  }
+]
