@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beacon | Open Source Minecraft Server Hosting & Orchestrator</title>
+    <meta name="description" content="Beacon provides Minecraft enthusiasts with a fast, modern resource to explore pre-configured server templates and track open-source metrics.">
+    <meta name="author" content="Adafa Ralph">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Beacon Open Source Hosting Platform">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://adafaralph.github.io/wdd231/final/images/og-preview.webp">
+    <meta property="og:url" content="https://adafaralph.github.io/wdd231/final/index.html">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <span class="site-title">Beacon Open Source</span>
+        <button id="hamburger-btn" aria-label="Toggle Navigation Menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Presets Directory</a></li>
+                <li><a href="dashboard.html">Live Stats</a></li>
+                <li><a href="setup.html">Server Request</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" style="display: flex; flex-direction: column; gap: 1rem; text-align: center; padding: 2rem 0;">
+            <h1>Empowering Minecraft Server Administration</h1>
+            <p>Beacon provides a fast, modern resource to explore pre-configured server templates, learn self-hosting, and track live open-source project stats.</p>
+            <div>
+                <a href="directory.html" class="btn-primary">Explore Server Presets</a>
+            </div>
+        </section>
+
+        <section class="server-grid" style="margin-top: 2rem;">
+            <div class="server-card">
+                <h3>Open Source Transparency</h3>
+                <p>Fully modular architecture built using Rust, C++, and Web technologies for transparent server management.</p>
+            </div>
+            <div class="server-card">
+                <h3>Optimized Performance</h3>
+                <p>Pre-tuned configurations ranging from lightweight Paper instances to heavy Forge modpacks.</p>
+            </div>
+            <div class="server-card">
+                <h3>Community Driven</h3>
+                <p>Built by administrators for administrators, supporting seamless multi-node proxy setups.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Beacon Open Source Platform | Saint Vincent and the Grenadines</p>
+        <p id="last-modified"></p>
+        <p>
+            <a href="attributions.html">Attributions</a> |
+            <a href="https://youtube.com" target="_blank" rel="noopener">Video Demonstration</a> |
+            <a href="siteplan.html">Site Plan</a>
+        </p>
+    </footer>
+</body>
+</html>

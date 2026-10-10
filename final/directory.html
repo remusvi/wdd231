@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Presets Directory | Beacon</title>
+    <meta name="description" content="Explore pre-configured Minecraft server templates with custom RAM and category filters.">
+    <meta name="author" content="Adafa Ralph">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Server Presets Directory - Beacon">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adafaralph.github.io/wdd231/final/directory.html">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <span class="site-title">Beacon Hosting</span>
+        <button id="hamburger-btn" aria-label="Toggle Navigation Menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Presets Directory</a></li>
+                <li><a href="dashboard.html">Live Stats</a></li>
+                <li><a href="setup.html">Server Request</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Minecraft Server Presets</h1>
+        <p>Filter through our catalog of optimized server templates[cite: 2].</p>
+
+        <div class="filter-controls">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="Survival">Survival</button>
+            <button class="filter-btn" data-category="Modded">Modded</button>
+            <button class="filter-btn" data-category="Proxy">Proxy</button>
+            <button class="filter-btn" data-category="MiniGames">MiniGames</button>
+        </div>
+
+        <div id="servers-container" class="server-grid">
+            <!-- Dynamically populated via fetch-servers.js -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Beacon Open Source Platform | <a href="attributions.html">Attributions</a> | <a href="siteplan.html">Site Plan</a></p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Setup Request | Beacon</title>
+    <meta name="description" content="Request custom server configuration files or submit server software inquiries to Beacon.">
+    <meta name="author" content="Adafa Ralph">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Server Setup Request - Beacon">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adafaralph.github.io/wdd231/final/setup.html">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <span class="site-title">Beacon Hosting</span>
+        <button id="hamburger-btn" aria-label="Toggle Navigation Menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Presets Directory</a></li>
+                <li><a href="dashboard.html">Live Stats</a></li>
+                <li><a href="setup.html" class="active">Server Request</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section style="max-width: 600px; margin: 0 auto; background: #ffffff; padding: 2rem; border: 1px solid #cbd5e1; border-radius: 6px;">
+            <h1>Custom Server Setup Request</h1>
+            <p style="margin-bottom: 1.5rem;">Complete the form below to request custom server files or architecture assistance.</p>
+
+            <form action="thanks.html" method="get">
+                <div style="margin-bottom: 1rem;">
+                    <label for="fullname" style="display:block; font-weight:600; margin-bottom:0.3rem;">Administrator Name *</label>
+                    <input type="text" id="fullname" name="fullname" required style="width:100%; padding:0.6rem; border:1px solid #cbd5e1; border-radius:4px;">
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label for="email" style="display:block; font-weight:600; margin-bottom:0.3rem;">Contact Email *</label>
+                    <input type="email" id="email" name="email" required style="width:100%; padding:0.6rem; border:1px solid #cbd5e1; border-radius:4px;">
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label for="servertype" style="display:block; font-weight:600; margin-bottom:0.3rem;">Preferred Server Software *</label>
+                    <select id="servertype" name="servertype" required style="width:100%; padding:0.6rem; border:1px solid #cbd5e1; border-radius:4px;">
+                        <option value="" disabled selected>Select software...</option>
+                        <option value="PaperMC">PaperMC (Survival)</option>
+                        <option value="Purpur">Purpur (High Performance)</option>
+                        <option value="Fabric">Fabric (Modded)</option>
+                        <option value="Forge">Forge (Heavy Modded)</option>
+                        <option value="Velocity">Velocity (Proxy Network)</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="message" style="display:block; font-weight:600; margin-bottom:0.3rem;">Configuration Notes / Requirements *</label>
+                    <textarea id="message" name="message" rows="4" required style="width:100%; padding:0.6rem; border:1px solid #cbd5e1; border-radius:4px;" placeholder="Specify player count, RAM allocation needs, or plugin lists..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Submit Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Beacon Open Source Platform | <a href="attributions.html">Attributions</a> | <a href="siteplan.html">Site Plan</a></p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "server-001",
+    "name": "Paper Vanilla +",
+    "software": "PaperMC",
+    "mcVersion": "1.20.4",
+    "minRamGB": 2,
+    "category": "Survival",
+    "recommendedPlayers": "1-10",
+    "summary": "Lightweight high-performance server preset ideal for small friend groups.",
+    "icon": "images/paper-logo.webp"
+  },
+  {
+    "id": "server-002",
+    "name": "Purpur Anarchy",
+    "software": "Purpur",
+    "mcVersion": "1.20.4",
+    "minRamGB": 6,
+    "category": "Anarchy",
+    "recommendedPlayers": "50+",
+    "summary": "Extreme performance tuning designed to handle large player counts and heavy redstone.",
+    "icon": "images/purpur-logo.webp"
+  },
+  {
+    "id": "server-003",
+    "name": "Fabric Modded SMP",
+    "software": "Fabric",
+    "mcVersion": "1.20.4",
+    "minRamGB": 4,
+    "category": "Modded",
+    "recommendedPlayers": "1-15",
+    "summary": "Lightweight modding loader configured with optimization and utility mods.",
+    "icon": "images/fabric-logo.webp"
+  },
+  {
+    "id": "server-004",
+    "name": "Forge Heavy Tech",
+    "software": "Forge",
+    "mcVersion": "1.20.1",
+    "minRamGB": 8,
+    "category": "Modded",
+    "recommendedPlayers": "1-20",
+    "summary": "Packed with major tech and magic mods for immersive long-term progression.",
+    "icon": "images/forge-logo.webp"
+  },
+  {
+    "id": "server-005",
+    "name": "Velocity Network Proxy",
+    "software": "Velocity",
+    "mcVersion": "3.3.0",
+    "minRamGB": 1,
+    "category": "Proxy",
+    "recommendedPlayers": "100+",
+    "summary": "Lightning-fast modern proxy to link multiple Minecraft servers seamlessly.",
+    "icon": "images/velocity-logo.webp"
+  },
+  {
+    "id": "server-006",
+    "name": "Spigot Classic",
+    "software": "Spigot",
+    "mcVersion": "1.20.2",
+    "minRamGB": 2,
+    "category": "Survival",
+    "recommendedPlayers": "1-10",
+    "summary": "Traditional plugin-ready server platform with broad compatibility.",
+    "icon": "images/spigot-logo.webp"
+  },
+  {
+    "id": "server-007",
+    "name": "Waterfall Bungee Proxy",
+    "software": "Waterfall",
+    "mcVersion": "1.20",
+    "minRamGB": 2,
+    "category": "Proxy",
+    "recommendedPlayers": "50+",
+    "summary": "Established Bungeecord fork for connecting multi-world game modes.",
+    "icon": "images/waterfall-logo.webp"
+  },
+  {
+    "id": "server-008",
+    "name": "Quilt Community Hub",
+    "software": "Quilt",
+    "mcVersion": "1.20.4",
+    "minRamGB": 4,
+    "category": "Modded",
+    "recommendedPlayers": "1-15",
+    "summary": "Next-generation modding toolchain focused on modular development.",
+    "icon": "images/quilt-logo.webp"
+  },
+  {
+    "id": "server-009",
+    "name": "Vanilla Snapshot Test",
+    "software": "Mojang",
+    "mcVersion": "Snapshot",
+    "minRamGB": 3,
+    "category": "Vanilla",
+    "recommendedPlayers": "1-5",
+    "summary": "Runs the absolute latest experimental features straight from Mojang.",
+    "icon": "images/mojang-logo.webp"
+  },
+  {
+    "id": "server-010",
+    "name": "Skyblock Core",
+    "software": "PaperMC",
+    "mcVersion": "1.20.4",
+    "minRamGB": 3,
+    "category": "MiniGames",
+    "recommendedPlayers": "1-30",
+    "summary": "Pre-configured island survival challenge setup with economy plugins.",
+    "icon": "images/skyblock-logo.webp"
+  },
+  {
+    "id": "server-011",
+    "name": "BedWars Arena Hub",
+    "software": "PaperMC",
+    "mcVersion": "1.20.4",
+    "minRamGB": 4,
+    "category": "MiniGames",
+    "recommendedPlayers": "20-60",
+    "summary": "Competitive team battle arena setup with automated map resetting.",
+    "icon": "images/bedwars-logo.webp"
+  },
+  {
+    "id": "server-012",
+    "name": "Hardcore Survival",
+    "software": "PaperMC",
+    "mcVersion": "1.20.4",
+    "minRamGB": 2,
+    "category": "Survival",
+    "recommendedPlayers": "1-10",
+    "summary": "Permadeath environment configured for high-stakes cooperative play.",
+    "icon": "images/hardcore-logo.webp"
+  },
+  {
+    "id": "server-013",
+    "name": "Creative Plot World",
+    "software": "Spigot",
+    "mcVersion": "1.20.4",
+    "minRamGB": 3,
+    "category": "Creative",
+    "recommendedPlayers": "1-25",
+    "summary": "Isolated plot claiming system for builders and architectural showcases.",
+    "icon": "images/creative-logo.webp"
+  },
+  {
+    "id": "server-014",
+    "name": "Pixelmon Adventure",
+    "software": "Forge",
+    "mcVersion": "1.16.5",
+    "minRamGB": 6,
+    "category": "Modded",
+    "recommendedPlayers": "1-20",
+    "summary": "Combines Minecraft mechanics with monster collecting and battling.",
+    "icon": "images/pixelmon-logo.webp"
+  },
+  {
+    "id": "server-015",
+    "name": "Vault Hunters Pack",
+    "software": "Fabric",
+    "mcVersion": "1.18.2",
+    "minRamGB": 8,
+    "category": "Modded",
+    "recommendedPlayers": "1-10",
+    "summary": "RPG progression pack focused on loot runs and dungeon crawling.",
+    "icon": "images/vaulthunters-logo.webp"
+  }
+]

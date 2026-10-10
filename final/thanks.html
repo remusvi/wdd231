@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Received | Beacon</title>
+    <meta name="description" content="Confirmation page displaying submitted server configuration parameters.">
+    <meta name="author" content="Adafa Ralph">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/thanks.js"></script>
+</head>
+<body>
+    <header>
+        <span class="site-title">Beacon Hosting</span>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Presets Directory</a></li>
+                <li><a href="dashboard.html">Live Stats</a></li>
+                <li><a href="setup.html">Server Request</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section style="max-width: 600px; margin: 0 auto; background: #ffffff; padding: 2rem; border: 1px solid #cbd5e1; border-radius: 6px;">
+            <h1>Request Submitted Successfully!</h1>
+            <p style="margin-bottom: 1rem;">Here are the parameters received from your configuration session:</p>
+
+            <div id="form-data-display" style="background: #f8fafc; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 4px; margin-bottom: 1.5rem;">
+                <!-- Populated via thanks.js URLSearchParams -->
+            </div>
+
+            <a href="index.html" class="btn-primary">Return to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Beacon Open Source Platform | <a href="attributions.html">Attributions</a> | <a href="siteplan.html">Site Plan</a></p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stats Dashboard | Beacon</title>
+    <meta name="description" content="Track real-time GitHub release stats, open issues, and repository activity for the Beacon project.">
+    <meta name="author" content="Adafa Ralph">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Live Stats Dashboard - Beacon">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adafaralph.github.io/wdd231/final/dashboard.html">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <span class="site-title">Beacon Hosting</span>
+        <button id="hamburger-btn" aria-label="Toggle Navigation Menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Presets Directory</a></li>
+                <li><a href="dashboard.html" class="active">Live Stats</a></li>
+                <li><a href="setup.html">Server Request</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Live Project Dashboard</h1>
+        <p>Real-time telemetry and repository metrics fetched directly from GitHub APIs.</p>
+
+        <div id="github-stats" class="server-grid" style="margin-top: 1.5rem;">
+            <!-- Populated dynamically via github-api.js -->
+            <p>Loading live telemetry...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Beacon Open Source Platform | <a href="attributions.html">Attributions</a> | <a href="siteplan.html">Site Plan</a></p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
