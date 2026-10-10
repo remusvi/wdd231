@@ -4,7 +4,7 @@ export async function initGitHubAPI() {
 
     try {
         // Example public repo endpoint or local fallback simulation if offline
-        const response = await fetch("https://api.github.com/repos/torvalds/linux");
+        const response = await fetch("https://api.github.com/repos/remusvi/beacon");
         if (!response.ok) throw new Error("API rate limit or network error");
         const data = await response.json();
 

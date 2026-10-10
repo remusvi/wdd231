@@ -7,7 +7,7 @@ export async function initServers() {
 
     try {
         // FIX: Actually fetch the JSON file and parse it into an array
-        const response = await fetch("data/servers.json");
+        const response = await fetch("data/data.json");
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const servers = await response.json();
 
